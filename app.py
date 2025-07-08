@@ -3,7 +3,8 @@ import pandas as pd
 import google.generativeai as genai
 
 # Configure Gemini API key
-genai.configure(api_key="AIzaSyDnSF5aTGJuffYy75ff-FJ11V2NIYBNEQI")
+
+genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 
 # Course Catalog
 COURSES = [
